@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #F2E9EB; /*Hintergrundfarbe*/
+            margin: 0;
+            padding: 0;
+           display: block;
+            min-height: 100vh; /* Ganze Höhe des Bildschirms */
+            position: relative;
+            min-height: 6000px;
+            
+
+        }
+        .steckbrief {
+            width: 600px;  /* Breite des Steckbriefs */
+            height: 900px; /* Höhe für Hochformat */
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden; /* Falls der Inhalt länger wird */
+        }
+
+    
+        
+
+.balken {
+    position: absolute;
+    top: 0px;
+    width: 100%;  /* Balken über die ganze Breite */
+    height: 125px; /* Höhe des Balkens */
+    background-color: #DD8EA4; /* Dunkelgraue Farbe */
+}
+.balken2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 900px;
+    width: 70%;  
+    height: 8px; 
+    background-color: #DD8EA4; 
+    border-radius: 5px;
+}
+.balken3 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1800px;
+    width: 70%;  
+    height: 8px; 
+    background-color: #DD8EA4; 
+    border-radius: 5px;
+}
+.balken4 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2700px;
+    width: 70%;  
+    height: 8px; 
+    background-color: #DD8EA4; 
+    border-radius: 5px;
+}
+
+.balken5 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 3600px;
+    width: 70%;  
+    height: 8px; 
+    background-color: #DD8EA4; 
+    border-radius: 5px;
+}
+.balken6 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 4500px;
+    width: 70%;  
+    height: 8px; 
+    background-color: #DD8EA4; 
+    border-radius: 5px;
+}
+.balken7 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5400px;
+    width: 70%;  
+    height: 8px; 
+    background-color: #DD8EA4; 
+    border-radius: 5px;
+}
+
+
+
+
+.PixieBild {
+    position: absolute;
+    top: 1000px;   
+    right: 15%;  
+    width: 700px; 
+    height: auto; 
+    border-radius: 10px; 
+}
+
+.ZaryaBild {
+    position: absolute;
+    top: 1900px;   
+    right: 15%;  
+    width: 500px; 
+    height: auto; 
+    border-radius: 10px; 
+}
+
+/*.PixieZarya {
+    position: absolute;
+    top: 1000px;   
+    right: 400px;  
+    width: 700px; 
+    height: auto; 
+    border: 5px solid #31383F;
+    border-radius: 10px; 
+}*/
+   
+.Bett2 {
+    position: absolute;
+    top: 200px;   
+    right: 15%;  
+    width: 750px; 
+    height: auto; 
+    border-radius: 10px; 
+}
+
+.langeZarya {
+    position: absolute;
+    top: 2950px;   
+    left: 21%;
+    transform: translateX(-50%);  
+    width: 225px; 
+    height: auto; 
+    border-radius: 10px; 
+}
+.langePixie {
+    position: absolute;
+    top: 2950px;   
+    left: 30%;  
+    width: 225px; 
+    height: auto; 
+    border-radius: 10px; 
+}
+.ZaryaPfote {
+    position: absolute;
+    top: 2950px;   
+    right: 15%;  
+    width: 250px; 
+    height: auto; 
+    border-radius: 10px; 
+}
+.PixiePfote {
+    position: absolute;
+    top: 2950px;   
+    right: 40%; 
+    transform: translateX(50%); 
+    width: 250px; 
+    height: auto; 
+    border-radius: 10px; 
+}
+
+.Überschrift {
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Gliederung  {
+    position:absolute;
+    font-size: 25px;
+    top: 250px;
+    left: 15%;
+    margin-bottom: 9px;
+    font-weight: bold;
+    font-size: 30px;
+    
+}
+.Gliederung ol{
+    padding-left:25px;
+    
+    
+}
+    .Gliederung li{
+       
+    margin-bottom: 20px;
+    font-weight:lighter
+}
+
+.U2 {
+    position: absolute;
+    top:1000px;
+    left:15%;
+    scroll-margin-top: 170px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.U2 ul{
+    font-weight: lighter;
+
+}
+
+
+
+.U3 {
+    position: absolute;
+    top:1900px;
+    left:15%;
+    scroll-margin-top: 170px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.U3 ul{
+    font-weight: lighter;
+
+}
+
+.U4 {
+    position: absolute;
+    top:2800px;
+    left:15%;
+    scroll-margin-top: 170px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.U5 {
+    position: absolute;
+    top:2875px;
+    left:15%;
+    scroll-margin-top: 170px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.U6 {
+    position: absolute;
+    top:2875px;
+    right:40%;
+    transform: translateX(-50%);
+    scroll-margin-top: 170px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.U7 {
+    position: absolute;
+    top: 3400px;
+    left: 29%;
+    transform: translateX(-50%);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 0.5;
+}
+    </style>
+</head>
+
+
+<body>
+    
+
+
+    
+     
+
+<!--Balken-->
+<div class="balken">    </div>
+<div class="balken2">    </div>
+<div class="balken3">    </div>
+<div class="balken4">    </div>
+<div class="balken5">    </div>
+<div class="balken6">    </div>
+<div class="balken7">    </div>
+<div class="balken8">    </div>
+
+<h1 class="Überschrift">
+    PIXIE & ZARYA
+</h1>
+
+<!--erste Seite-->
+<div class="Gliederung">
+    Das findest du hier:
+    <ol>
+        <li><a href="#U2">Steckbrief Pixie</a></li>
+        <li><a href="#U3">Steckbrief Zarya</a></li>
+        <li><a href="#U5">Wichtige Infos</a></li>
+            <ul>
+                <li>Lange Katzen</li>
+                <li>Pfoten</li>
+                <li>Lieblingsort</li>
+                <li>Lieblingsspielzeug</li>
+            </ul>
+
+        <li>Aktivitäten</li>
+        <li>Mmmmh</li>
+        <li>Süße Katzenbilder</li>
+    </ol>
+</div>
+
+
+<!--2.Seite-->
+<div id="U2" class="U2">
+    STECKBRIEF PIXIE
+
+
+<!--Steckbrief-->
+
+
+<ul>
+    <li>Name: Pixie</li>
+    <li>Geburtstag: 21.05.2023</li>
+    <li>Rasse: Europäisch Kurzhaar</li>
+    <li>Größe:39cm</li>
+    <li>Länge:73cm</li>
+    <li>Gewicht:</li>
+    <li>Augenfarbe: Gelb-Grün</li>
+    <li>Fellfarbe: Schwarz-Weiß</li>
+    <li>Pfotenfarbe: Schwarz und Pink</li>
+    <li>Lieblingsessen:</li>
+    <li>Lieblingsspott:</li>
+    <li>bis jetzt erlernt Tricks:   
+        <ul>
+            <li>Sitz</li>
+        </ul>
+    </li>
+
+</ul>
+</div>
+
+
+
+<!--3.Seite-->
+<div id="U3" class="U3">
+    STECKBRIEF ZARYA
+
+
+<!--Steckbrief-->
+
+
+<ul>
+    <li>Name: Zarya</li>
+    <li>Geburtstag: 21.05.2023</li>
+    <li>Rasse: Europäisch Kurzhaar</li>
+    <li>Größe:36cm</li>
+    <li>Länge:74cm</li>
+    <li>Gewicht:</li>
+    <li>Augenfarbe: Gelb-Grün</li>
+    <li>Fellfarbe: Getigert-Weiß</li>
+    <li>Pfotenfarbe: Schwarz und Pink</li>
+    <li>Lieblingsessen:</li>
+    <li>Lieblingsspott:</li>
+    <li>bis jetzt erlernt Tricks:   
+        <ul>
+            <li>Sitz</li>
+        </ul>
+    </li>
+
+</ul>
+</div>
+
+<!--4.Seite-->
+<div id="U4" class="U4">
+    WICHTIGE INFOS
+  
+</div>
+<div id="U5" class="U5">
+   Lange Katzen
+  
+</div>
+
+<div id="U6" class="U6">
+    Pfoten
+   
+ </div>
+ 
+ <div id="U7" class="U7">
+    <p>Katzen werden unglaublich lang, wenn man sie so hällt,</p>
+    <p>dass man ihre länge messen kann...</p>
+    <p>Zarya wird länger als Pixie, obwohl sie kleiner ist,</p>
+    <p>aber das liegt wahrscheinlich daran, dass Pixie die Beine einzieht,</p>  
+    <p>wenn man sie hochhebt</p>
+
+
+
+
+ </div>
+ 
+
+
+<!--BILDER-->
+<img class="PixieZarya" src="Pixie&Zarya babys.jpg" width="2oo" alt="Katzenbabys">
+<img class="PixieBild" src="Pixie2.jpg" width="200" alt="Katzi">
+
+<img class="Bett2" src="sleepy.jpg">
+
+<img class="ZaryaBild" src="ZaryaBalkon.jpg" width="200" alt="Katzi">
+
+<img class="langeZarya" src="Lange Zarya.jpg" width="200" alt="Katzi">
+<img class="langePixie" src="Lange Pixie.jpg" width="200" alt="Katzi">
+
+<img class="ZaryaPfote" src="Pfote Zarya.jpg" width="200" alt="Katzi">
+<img class="PixiePfote" src="Pfote Pixie.jpg" width="200" alt="Katzi">
+
+</body>
+</html>
